@@ -1,0 +1,49 @@
+.tweet {
+border-left: 5px solid #68727d;
+}
+i.fa {
+
+    font-size: 25px;
+}
+.retweets,.favorites,.replies,.language {
+	text-align: center;
+}
+.tweetDescription {
+	margin-left:10px;
+}
+.tweetPhoto img {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.zoomed {
+	zoom:0.8;
+}
+
+.jumbotron {
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.navbar-header .fa, .nav .fa {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.vcenter {
+	float: left;
+	}
+}

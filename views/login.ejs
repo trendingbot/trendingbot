@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NowTrendingBot: <%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/custom.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .control-label {  
+      font-size: medium;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand wow fadeIn"><i class="fa fa-line-chart" aria-hidden="true"></i> Now Trending Bot</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+            </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <!--<h1></h1> -->
+             <p class="lead"></p> 
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+          </div>
+        </div>
+        <div class="row">
+
+        <div class="col-sm-3"></div>
+
+        <div class="col-sm-6">
+           <div class="well bs-component wow pulse" data-wow-duration="0.5s">
+              <form class="form-horizontal" action="/auth/accedi" method="POST" id="loginForm">
+                <fieldset>
+                  <legend class="wow fadeIn" data-wow-delay="0.2s" data-wow-duration="0.5s"><i class="fa fa-key" aria-hidden="true"></i> Login</legend>
+                  <div class="form-group">
+                    <label for="inputUsername" class="col-lg-2 control-label">Username</label>
+                    <div class="col-lg-10 wow flipInX" data-wow-duration="0.5s">
+                      <input type="text" name="username" class="form-control" id="inputUsername" placeholder="Username" autofocus="autofocus" tabindex="1">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                      <input type="password" name="password" class="form-control wow flipInX" data-wow-delay="0.05s" data-wow-duration="0.5s" id="inputPassword" placeholder="Password" tabindex="2">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Ricordami
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group" style="text-align: center;">
+                  <button type="submit" form="loginForm" class="btn btn-primary"><i class="fa fa-sign-in" aria-hidden="true" tabindex="3"></i>  Login</a>
+                  </div>
+                  
+                </fieldset>
+              </form>
+            </div>
+         </div>
+
+         <div class="col-sm-3"></div>
+
+
+        </div>
+      </div>
+
+      <footer class="wow fadeIn">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Torna in cima</a></li>
+            </ul>
+            <p>(c) Marco Massari 2017</p>
+    
+
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+    <script src="./assets/js/wow.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        new WOW().init();
+       });
+      </script>
+  </body>
+</html>

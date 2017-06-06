@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NowTrendingBot: Impostazioni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/custom.min.css">
+    <link rel="stylesheet" href="./assets/css/settings.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand wow fadeIn"><i class="fa fa-line-chart" aria-hidden="true"></i> Now Trending Bot</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://builtwithbootstrap.com/" target="_blank"><i class="fa fa-cog wow rotateIn" aria-hidden="true"></i>&nbsp; Impostazioni</a>
+                    </li>
+                    <li><a href="http://builtwithbootstrap.com/" target="_blank"><i class="fa fa-sign-out wow fadeInLeft" aria-hidden="true"></i>&nbsp; Logout</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container zoomed">
+    <h2 class="wow fadeIn"><i class="fa fa-fire wow pulse" aria-hidden="true" data-wow-iteration="infinite"></i> Le ultime tendenze ora</h2>
+        <div class="row">
+        <div class="col-sm-5 wow fadeIn">
+          <canvas id="trendsChart" width="300" height="300"></canvas>
+        </div>
+        <div class="col-sm-3">
+          <h3 class="wow fadeInLeft"><i class="fa fa-hashtag" aria-hidden="true"></i> Primi 10 trends</h3>
+          <ol id="topTen">
+          <!--
+            <li class="wow fadeIn" data-wow-delay="0.1s"><h4>#Primo</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.15s"><h4>#Secondo</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.20s"><h4>#Terzo</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.25s"><h4>#Quarto</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.30s"><h4>#Quinto</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.35s"><h4>#Sesto</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.40s"><h4>#Settimo</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.45s"><h4>#Ottavo</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.50s"><h4>#Nono</h4></li>
+            <li class="wow fadeIn" data-wow-delay="0.55s"><h4>#Decimo</h4></li> -->
+          </ol>
+
+
+        </div>
+        <div class="col-sm-4"><h4 class="wow fadeInLeft">Altri trends</h4></div>
+    </div>
+
+
+
+      <h2 class="wow fadeIn"><i class="fa fa-twitter wow pulse" aria-hidden="true" data-wow-iteration="infinite"></i> Ultimi tweet popolari...</h2>
+
+        <div class="page-header" id="banner">
+            <!-- begin tweet -->
+            <!--<div class="jumbotron wow fadeIn">
+                <div class="row">
+                    <div class="innerTweet col-sm-12 col-md-7 vcenter">
+                        <blockquote class="tweet">
+                            <div class="row">
+                                <div class="col-md-1 col-xs-2 tweetPhoto">
+                                    <img src="https://pbs.twimg.com/profile_images/738744285101580288/OUoCVEXG_normal.jpg">
+                                </div>
+                                <div class="col-md-8 col-xs-9 tweetDescription">
+                                    Barack Obama
+                                    <br>
+                                    <small>
+                       <cite title="Source Title">@POTUS</cite>
+                      </small>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+                        </blockquote>
+                    </div>
+                    <div class="retweets col-xs-3 col-md-1 vcenter wow flipInY" data-wow-delay="0.2s">
+                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                        <p class="countUp" data-num="123">0</p>
+                    </div>
+                    <div class="favorites col-xs-3 col-md-1 vcenter wow flipInY" data-wow-delay="0.22s">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <p class="countUp" data-num="456">0</p>
+                    </div>
+                    <div class="replies col-xs-3 col-md-1 vcenter wow flipInY" data-wow-delay="0.24s">
+                        <i class="fa fa-reply" aria-hidden="true"></i>
+                        <p class="countUp" data-num="789">0</p>
+                    </div>
+                    <div class="language col-xs-3 col-md-1 vcenter wow flipInY" data-wow-delay="0.28s">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <p class="countUp" data-num="658">0</p>
+                    </div>
+                    <div class="language col-md-1">
+
+                    </div>
+                </div>
+
+
+            </div>-->
+            <!-- end tweet -->
+
+
+
+
+            <!-- begin tweet -->
+             <!--<div class="jumbotron wow fadeIn" data-wow-delay="0.08s">
+                <div class="row">
+                    <div class="innerTweet col-sm-12 col-md-7 vcenter">
+                        <blockquote class="tweet">
+                            <div class="row">
+                                <div class="col-md-1 col-xs-2 tweetPhoto">
+                                    <img src="https://pbs.twimg.com/profile_images/738744285101580288/OUoCVEXG_normal.jpg">
+                                </div>
+                                <div class="col-md-8 col-xs-9 tweetDescription">
+                                    Barack Obama
+                                    <br>
+                                    <small>
+                       <cite title="Source Title">@POTUS</cite>
+                      </small>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+                        </blockquote>
+                    </div>
+                    <div class="retweets col-xs-3 col-md-1 vcenter wow flipInY" data-wow-delay="0.2s">
+                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                        <p class="countUp" data-num="658">0</p>
+                    </div>
+                    <div class="favorites col-xs-3 col-md-1 vcenter wow flipInY" data-wow-delay="0.22s">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <p class="countUp" data-num="156">0</p>
+                    </div>
+                    <div class="replies col-xs-3 col-md-1 vcenter wow flipInY" data-wow-delay="0.24s">
+                        <i class="fa fa-reply" aria-hidden="true"></i>
+                        <p class="countUp" data-num="485">0</p>
+                    </div>
+                    <div class="language col-xs-3 col-md-1 vcenter wow flipInY" data-wow-delay="0.28s">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <p class="countUp" data-num="874">0</p>
+                    </div>
+                    <div class="language col-md-1">
+
+                    </div>
+                </div>
+
+
+            </div>-->
+            <!-- end tweet -->
+        </div>
+
+        <footer class="wow fadeIn">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ul class="list-unstyled">
+                        <li class="pull-right"><a href="#top">Torna in cima</a>
+                        </li>
+                    </ul>
+                    <p>(c) Marco Massari 2017</p>
+
+
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/countUp.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/Chart.min.js"></script>
+    <script type="text/javascript">
+
+    $(function() {
+
+      $.getJSON( "trends.json", function( data ) {
+        var tweetsLi = "";
+        var anim = 0.1;
+        $.each( data["trends"], function( key, val ) {
+          tweetsLi += "<li class=\"wow fadeIn\" data-wow-delay=\""+anim+0.05+"s\"><h4>"+val.name+"</h4></li>\n";
+          anim+=0.05;
+        });
+
+        var allTweets = "";
+
+        var tweetStart= "<!-- tweet begin -->"+
+                    "<div class=\"jumbotron wow fadeIn\"> "+
+                            "<div class=\"row\">"+
+                                "<div class=\"innerTweet col-sm-12 col-md-7 vcenter\">"+
+                                    "<blockquote class=\"tweet\">"+
+                                        "<div class=\"row\">"+
+                                            "<div class=\"col-md-1 col-xs-2 tweetPhoto\">"+
+                                                "<img src=\"";
+        
+        
+        $.each( data["tweets"], function( key, val ) {
+        var tweetMiddle = val.statuses[0].user.profile_image_url+"\"></div><div class=\"col-md-8 col-xs-9 tweetDescription\">"+
+                                    val.statuses[0].user.name+
+                                   "<br><small>"+
+                       "<cite title=\"Source Title\">"+val.statuses[0].user.screen_name+"</cite>"+
+                      "</small></div></div><p>"+
+                     val.statuses[0].text+
+                      "</p></blockquote></div>"+
+                    "<div class=\"retweets col-xs-3 col-md-1 vcenter wow flipInY text-center\" data-wow-delay=\"0.1s\">"+
+                        "<i class=\"fa fa-retweet\" aria-hidden=\"true\"></i>"+
+                        "<p class=\"countUp\" data-num=\""+val.statuses[0].retweet_count+"\">0</p>"+
+                    "</div>"+
+                    "<div class=\"favorites col-xs-3 col-md-1 vcenter wow flipInY text-center\" data-wow-delay=\"0.12s\">"+
+                        "<i class=\"fa fa-heart\" aria-hidden=\"true\"></i>"+
+                        "<p class=\"countUp\" data-num=\""+val.statuses[0].favorite_count+"\">0</p>"+
+                    "</div>"+
+                    "<div class=\"followers col-xs-3 col-md-2 vcenter wow flipInY text-center\" data-wow-delay=\"0.14s\">"+
+                        "<i class=\"fa fa-users\" aria-hidden=\"true\"></i>"+
+                        "<p class=\"countUp\" data-num=\""+val.statuses[0].user.followers_count+"\">0</p>"+
+                    "</div>"+
+                    "<div class=\"language col-xs-3 col-md-1 vcenter wow flipInY text-center\" data-wow-delay=\"0.18s\">"+
+                        "<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>"+
+                        "<p>"+(val.statuses[0].lang ? val.statuses[0].lang : "")+"</p>"+
+                    "</div>"+
+                   // "<div class=\"language col-md-1\">"+
+                    "</div></div>"+
+                    "<!-- end tweet -->";
+
+        allTweets += tweetStart+tweetMiddle;
+    });
+
+
+
+
+
+        $("#topTen").html(tweetsLi);
+        $("#banner").html(allTweets);
+
+        /*$( "<ul/>", {
+          "class": "my-new-list",
+          html: items.join( "" )
+        }).appendTo( "body" );*/
+        $(".countUp").each(function() {
+            var options = {
+              useEasing : true, 
+              useGrouping : true, 
+              separator : '', 
+              decimal : '.', 
+              prefix : '', 
+              suffix : '' 
+            };
+          var anim = new CountUp(this, 0, $( this ).data("num"), 0, 2.5, options);
+          anim.start();
+        });
+      });
+
+
+
+      new WOW().init();
+
+
+
+
+        var data = {
+              labels: [
+                  "Red",
+                  "Blue",
+                  "Yellow"
+              ],
+              datasets: [
+                  {
+                      data: [300, 50, 100],
+                      backgroundColor: [
+                          "#FF6384",
+                          "#36A2EB",
+                          "#FFCE56"
+                      ]
+                  }]
+          };
+        var ctx = document.getElementById("trendsChart").getContext("2d");
+        //ctx.canvas.width = 300;
+        //ctx.canvas.height = 300;
+        Chart.defaults.global.defaultFontColor = "#ebebeb"  
+        var myPieChart = new Chart(ctx,{
+            type: 'pie',
+            data: data
+        });
+     });
+      
+
+
+    </script>
+
+</body>
+
+</html>

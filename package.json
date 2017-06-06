@@ -1,0 +1,38 @@
+{
+  "name": "twitter-listbot",
+  "description": "A robot that retweets the contents of a twitter list.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bryanbraun/twitter-listbot",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bryanbraun/twitter-listbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bryanbraun/twitter-listbot/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "~4.9.0",
+    "express-session": "^1.15.3",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "tuiter": "~0.2.12"
+  },
+  "devDependencies": {
+    "async": "^2.1.4"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "author": "Bryan Braun <bbraun7@gmail.com> (http://www.bryanbraun.com)",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
